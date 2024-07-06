@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iSpays</title>
+    <link rel="stylesheet" href="./master.css">
+</head>
+<body>
+    <div class="icon-bar">
+        <img src="https://isparklearning.com/assets/images/logo.png" alt="LOGO">
+    </div>
+    <div class="form">
+        <form>
+        <label for="dropdown">Select Service type: </label>
+        <select name="service-type" id="services" value="Select Choice">
+            <option value="Free">Free Darshan</option>
+            <option value="Special">Special Darshan</option>
+            <option value="VIP">VIP Darshan</option>
+            <option value="Vehicle pooja2">Vehicle pooja (2 - Wheeler)</option>
+            <option value="Vehicle pooja4">Vehicle pooja (4 - Wheeler & Above)</option>
+        </select><br><br>
+        <label for="name">Name of the Devote: </label><input id="rname" class="txtin" type="text"><br><br>
+        <label for="name">Enter Phone No: </label><input id="rphno" class="txtin" type="text"><br><br>
+        <label for="name">No of Devotee: </label><input id="nodev" class="txtin" type="text"><br><br>
+        <label for="amount-label">Total amount: </label><p id="amount"></p>
+
+    </form>
+    <input onclick="updater()" class="submit" type="submit" value="Enter">
+    <input onclick="reset()" class="submit" type="reset" value="Reset">
+        </div>
+    <div class="qr-holder">
+        <img id="qr" src="./001.png" alt="QR Code">
+    </div>
+    <div class="last-trans">
+        <table class="last-tran-table">
+            <tr>
+                <th>Service type</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>No of Devote</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td id="type"></td>
+                <td id="name"></td>
+                <td id="phno"></td>
+                <td id="nod"></td>
+                <td id="totam"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <a href="mailto:sundarsam805@gmail.com&cc=sundarsam805@gmail.com">mail</a>
+    
+    <script src="./master.js"></script>
+</body>
+</html>
